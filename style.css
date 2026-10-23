@@ -1,0 +1,48 @@
+body{margin:0;font:16px Arial,sans-serif;background:#f6f6f6;color:#222}header{background:#181818;color:#ff7900;padding:18px}main{max-width:1000px;margin:20px auto;padding:0 15px}.panel{background:white;border-radius:12px;padding:18px;margin:15px 0;box-shadow:0 2px 8px #0001}article{padding:12px 0;border-bottom:1px solid #ddd}button{border:0;border-radius:7px;background:#ff7900;padding:10px 15px;font-weight:bold;cursor:pointer;margin:4px}input,select,textarea{padding:10px;margin:7px 0;display:block;width:100%;max-width:450px;box-sizing:border-box;border:1px solid #bbb;border-radius:7px}a{color:#a65300}h1{margin:0}h2{margin-top:0}
+
+.tabs{display:flex;gap:8px;flex-wrap:wrap;margin:12px 0}.tabs a,.tabs button{display:inline-block;background:#ff7900;color:#171717;text-decoration:none;border-radius:8px;padding:12px;font-weight:bold}.tabs a:hover,.tabs button:hover{filter:brightness(.94)}[hidden]{display:none!important}
+
+/* Cardápio importado do PDF */
+.product-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:14px;margin:15px 0 28px}
+.product-card{background:#fff;border:1px solid #ece5dd;border-radius:14px;overflow:hidden;display:flex;flex-direction:column;padding:0;box-shadow:0 2px 8px #0000000a}
+.product-photo{width:100%;height:172px;object-fit:contain;background:#f7f7f7}
+.product-info{padding:13px;display:flex;flex-direction:column;gap:6px;flex:1}
+.product-info h3{font-size:16px;margin:0}
+.product-info p{font-size:13px;line-height:1.4;color:#5d5d5d;margin:0;flex:1}
+.product-category{font-size:11px;color:#a35008;font-weight:700;text-transform:uppercase}
+.product-price{font-weight:800;font-size:19px;color:#1b1b1b}
+.product-info button{margin-top:8px}
+.category-filter{display:flex;flex-wrap:wrap;gap:7px;margin:12px 0}
+.category-filter button{background:#f2ebe2;border:1px solid #e7d9c5;font-size:13px;margin:0;padding:9px 12px}
+.category-filter button.selected{background:#ff7900;border-color:#ff7900}
+.import-panel{border:1px solid #ffcd9b;background:#fffaf4;border-radius:12px;padding:15px;margin:15px 0}
+#counter-products.product-grid{margin:10px 0}
+@media(max-width:520px){.product-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:9px}.product-photo{height:126px}.product-info{padding:10px}.product-info h3{font-size:14px}.product-price{font-size:17px}.product-info button{padding:10px 6px}}
+
+.store-info{background:#fff3e4;border-radius:9px;padding:12px;color:#613509;font-weight:600}
+
+/* Identidade Palace Burg — preto, ouro e rubi; logo original do cliente */
+:root{color-scheme:dark;--palace-night:#090907;--palace-black:#12110e;--palace-panel:#191714;--palace-gold:#eebd43;--palace-bright:#ffd972;--palace-muted:#c9bfad;--palace-red:#b82425;--palace-line:#50402b}
+*{box-sizing:border-box}
+body{background:radial-gradient(circle at 50% -70px,#393019 0,transparent 420px),linear-gradient(180deg,#13120e 0%,#080807 75%);color:#f5ede0;min-height:100vh;font-family:system-ui,-apple-system,'Segoe UI',Arial,sans-serif;line-height:1.5}
+.brand-header{padding:22px 18px 20px;background:linear-gradient(110deg,#0b0a08 10%,#282015 62%,#130d0a);color:#fff;border-bottom:2px solid #c7912e;box-shadow:0 9px 32px #0008}
+.brand-inner{max-width:1060px;margin:auto;display:flex;align-items:center;gap:20px}
+.brand-mark{display:flex;align-items:center;justify-content:center;flex-shrink:0;text-decoration:none}
+.brand-mark img{height:142px;width:135px;object-fit:contain;filter:drop-shadow(0 5px 12px #000)}
+.brand-heading{min-width:0}.brand-heading .eyebrow{display:block;color:#ffd36a;font-size:11px;letter-spacing:.22em;font-weight:800;margin-bottom:5px}
+.brand-heading h1{font-size:clamp(24px,4vw,40px);font-weight:900;line-height:1.1;margin:0;letter-spacing:-.035em;color:#ffda73;text-shadow:0 1px 0 #63410f}
+.brand-heading p{margin:9px 0 0;color:#eee0c9;font-size:14px}
+main{max-width:1060px;margin:28px auto;padding:0 16px 50px}
+h2{color:#ffe3a1}h3{color:#fff1cd}
+.panel,.product-card{background:linear-gradient(150deg,#242018,#171512);border:1px solid #5a4523;border-radius:15px;box-shadow:0 10px 32px #0005;color:#f5ede0}
+article{border-bottom-color:#453b2c}article:last-child{border-bottom:0}
+button,.tabs a,.tabs button{background:linear-gradient(180deg,#ffe58c 0%,#e1ab35 72%,#c48b24 100%);color:#211507;border:1px solid #dbac41;border-radius:10px;font-weight:800;box-shadow:0 2px 0 #7d531b;transition:filter .15s ease,transform .15s ease}
+button:hover,.tabs a:hover,.tabs button:hover{filter:brightness(1.13);transform:translateY(-1px)}
+button:focus-visible,a:focus-visible,input:focus-visible,textarea:focus-visible,select:focus-visible{outline:3px solid #ffd55a;outline-offset:2px}
+button:disabled{opacity:.48;cursor:not-allowed}
+input,textarea,select{background:#25221d;color:#fff2db;border:1px solid #7c633f;border-radius:9px}input::placeholder,textarea::placeholder{color:#baa992}
+a{color:#ffdc83}.product-photo{background:#302922}.product-info p{color:#d9cbb6}.product-info h3{color:#ffecbf}.product-category{color:#ffcc6b}.product-price{color:#ffda76}
+.category-filter button{background:#393022;color:#f8e7c4;border:1px solid #796033;box-shadow:none}.category-filter button.selected{background:linear-gradient(180deg,#ffe58c,#d6a02d);color:#1a1207;border-color:#f3c959}
+.store-info,.import-panel{background:#2a2219;color:#ffdd9e;border-color:#765827;border-radius:12px}
+.tabs{margin:16px 0 22px}.tabs a,.tabs button{padding:11px 16px}.product-grid{gap:16px}.product-card{overflow:hidden}.product-info{padding:14px}
+@media(max-width:600px){.brand-header{padding:13px 12px}.brand-inner{gap:12px}.brand-mark img{height:94px;width:94px}.brand-heading .eyebrow{font-size:9px;letter-spacing:.14em}.brand-heading h1{font-size:23px}.brand-heading p{font-size:12px;margin-top:4px}main{margin-top:16px;padding:0 12px 40px}.panel{padding:14px}.product-grid{gap:9px}.product-info{padding:10px}}
